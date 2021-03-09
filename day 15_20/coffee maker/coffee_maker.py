@@ -48,16 +48,16 @@ def main():
     while not stop:
         # Clear the terminal
         #clear_screen()
-        selection = input('What coffee would you like (Espresso / Latte / Cappuccino): ').lower()
+        selection = str(input('What coffee would you like (Espresso / Latte / Cappuccino): ')).lower()
         # Selection
         if selection == 'off':
             stop = True
             print('Powering Off...')
-        elif selection == 'report':
+        elif selection == 'report'or selection == 'r':
             print(f"Water: {ingredient_stock['water']}mls")
             print(f"Milk: {ingredient_stock['milk']}mls")
             print(f"Coffee: {ingredient_stock['coffee']}grams")
-            #print(f'Money in machine: {bank}')
+            print(f'Money in machine: {bank}')
         else:
             result = quantity_ingredients(menu,selection,ingredient_stock)
             # If the returned object is not the updated stock dictionary
@@ -67,23 +67,23 @@ def main():
                 main()
                 #clear_screen()
 
-        # Ask for the money
-        price = menu[selection]['cost']
-        print(price)
-        print('Insert coins.')
-        payment = 0
-        payment = payment + int(input('How many Quarters? '))*25
-        payment = payment + int(input('How many Dimes? '))*10
-        payment = payment + int(input('How many Nickles? '))*5
-        payment = payment + int(input('How many Pennies? '))*1
+            # Ask for the money
+            price = menu[selection]['cost']
+            print(price)
+            print('Insert coins.')
+            payment = 0
+            payment = payment + int(input('How many Quarters? '))*25
+            payment = payment + int(input('How many Dimes? '))*10
+            payment = payment + int(input('How many Nickles? '))*5
+            payment = payment + int(input('How many Pennies? '))*1
 
-        payment = float(payment/100) # Convert payment to £
-        change = payment - price # Change required
-        if change >=0:
-            bank = bank + payment
-            print(f'Here is £{change} in change. Enjoy your coffee')
-        else:
-            print(f'The price of this coffee is &{price} you only inserted £{payment}.')
+            payment = float(payment/100) # Convert payment to £
+            change = payment - price # Change required
+            if change >=0:
+                bank = bank + payment
+                print(f'Here is £{change} in change. Enjoy your coffee')
+            else:
+                print(f'The price of this coffee is &{price} you only inserted £{payment}.')
   
 main()      
 
