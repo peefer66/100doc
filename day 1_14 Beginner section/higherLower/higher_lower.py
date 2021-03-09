@@ -62,8 +62,6 @@ def game(end_game):
         score = compare_answers(follower_count_a,follower_count_b,answer,score)
         if score == 0:
             end_game= True
-    
-
-    
+ 
 
 game(end_game)
