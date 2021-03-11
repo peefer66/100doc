@@ -14,11 +14,13 @@ def quantity_ingredients(menu_dict, coffee_selection, amount_ingredients):
             amount_ingredients[key] = amount_ingredients[key] -  value
 
     return amount_ingredients
-            
+          
 def clear_screen():
     os.system('cls')
 
-def pay_for_coffee():
+def pay_for_coffee(price):
+    print(f'Price: £{price}')
+    print('Please insert coins.')
     payment = 0
     payment += int(input('How many Quarters? '))*25
     payment += int(input('How many Dimes? '))*10
@@ -73,19 +75,17 @@ def main():
             if type(result) == str:
                 print(f'Sorry there is not enough {result} for a {selection}')
                 main()
-                #clear_screen()
-
+            
             # Ask for the money
             price = menu[selection]['cost']
-            print(price)
-            print('Insert coins.')
-            payment = pay_for_coffee()
-
-            
+            payment = pay_for_coffee(price)
+           
             change = payment - price # Change required
             if change >=0:
                 bank = bank + payment
+                clear_screen()
                 print(f'Here is £{change} in change. Enjoy your coffee')
+                
             else:
                 print(f'The price of this coffee is £{price} you only inserted £{payment}.')
   
