@@ -1,0 +1,14 @@
+Classes Required
+
+Paddles
+    Move up and down
+
+Ball
+    move across the screen
+    rebound when collision with the bat
+    rebound when collide with top and bottom of the screen
+    inrement score when goes off screen at the sides
+    
+Scoreboard
+    incremented when ball goes off screen
+    Keep track of the game score
