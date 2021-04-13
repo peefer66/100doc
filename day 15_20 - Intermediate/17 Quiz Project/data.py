@@ -1,15 +1,12 @@
 question_data = [
-    {"text": "A slug's blood is green.", "answer": "True"},
-    {"text": "The loudest animal is the African Elephant.", "answer": "False"},
-    {"text": "Approximately one quarter of human bones are in the feet.", "answer": "True"},
-    {"text": "The total surface area of a human lungs is the size of a football pitch.", "answer": "True"},
-    {"text": "In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.", "answer": "True"},
-    {"text": "In London, UK, if you happen to die in the House of Parliament, you are entitled to a state funeral.", "answer": "False"},
-    {"text": "It is illegal to pee in the Ocean in Portugal.", "answer": "True"},
-    {"text": "You can lead a cow down stairs but not up stairs.", "answer": "False"},
-    {"text": "Google was originally called 'Backrub'.", "answer": "True"},
-    {"text": "Buzz Aldrin's mother's maiden name was 'Moon'.", "answer": "True"},
-    {"text": "No piece of square dry paper can be folded in half more than 7 times.",
-             "answer": "False"},
-    {"text": "A few ounces of chocolate can to kill a small dog.", "answer": "True"}
-]
+{"category": "Entertainment: Video Games", "type": "boolean", "difficulty": "hard", "question": "The retail disc of Tony Hawk&#039;s Pro Skater 5 only comes with the tutorial.", "correct_answer": "True", "incorrect_answers": ["False"]},
+{"category": "Entertainment: Video Games", "type": "boolean", "difficulty": "medium",
+"question": "DragonForce&#039;s &#039;Through the Fire and Flames&#039; is widely considered to be the hardest song in the Guitar Hero series.", "correct_answer": "True", "incorrect_answers": ["False"]},
+{"category": "Science & Nature", "type": "boolean", "difficulty": "medium", "question": "Like with the Neanderthals, Homo sapiens sapiens also interbred with the Denisovans.", "correct_answer": "True", "incorrect_answers": ["False"]},
+{"category": "General Knowledge", "type": "boolean", "difficulty": "medium", "question": "There are 86400 seconds in a day.", "correct_answer": "True", "incorrect_answers": ["False"]},
+  {"category": "Entertainment: Video Games", "type": "boolean", "difficulty": "easy", "question": "&quot;Half-Life 2&quot; runs on the Source Engine.", "correct_answer": "True", "incorrect_answers": ["False"]},
+{"category": "Entertainment: Video Games", "type": "boolean", "difficulty": "easy", "question": "Donkey Kong was originally set to be a Popeye arcade game.", "correct_answer": "True", "incorrect_answers": ["False"]},
+{"category": "Entertainment: Japanese Anime & Manga", "type": "boolean", "difficulty": "easy", "question": "In Kill La Kill, the weapon of the main protagonist is a katana. ", "correct_answer": "False", "incorrect_answers": ["True"]}, 
+{"category": "Entertainment: Video Games", "type": "boolean", "difficulty": "medium", "question": "Mortal Kombat was almost based on Jean-Claude Van Damme movie.", "correct_answer": "True", "incorrect_answers": ["False"]}, 
+{"category": "Art", "type": "boolean", "difficulty": "medium", "question": "Venus of Willendorf is one of the earliest works of art, depicting the planets Mars and Venus embrace in the heavens at night.", "correct_answer": "False", "incorrect_answers": ["True"]}, 
+{"category": "Entertainment: Video Games", "type": "boolean", "difficulty": "hard", "question": "The video game &quot;Fuel&quot; has an open world that is 5,560 square miles?", "correct_answer": "True", "incorrect_answers": ["False"]}]
