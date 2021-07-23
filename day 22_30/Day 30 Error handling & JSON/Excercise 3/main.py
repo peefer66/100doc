@@ -20,10 +20,12 @@ def generate_phonetic():
         output_list = [phonetic_dict[letter] for letter in word]
     except KeyError:
         print('Name must be letters only')
+        # Call the function again to retry
         generate_phonetic()
     else:
         print(output_list)
 
+# Call the function
 generate_phonetic()
 
 
